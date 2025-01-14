@@ -1,5 +1,13 @@
 <h1>🧩 Logic Exercises List <img align="right" src="https://img.shields.io/badge/status-In%20Development-blue" alt="In Development" ></h1>
 
+## Contents 📋
+
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [How to Run](#how-to-run)
+- [Exercise List](#exercise-list)
+- [Contributing](#contributing)
+  
 ## About ℹ️
 This project organizes C# logic exercises into 10 steps, each containing a series of exercises stored in separate files. It features a modular structure with a navigation menu, providing easy access to each exercise individually.
 
@@ -12,21 +20,15 @@ This project organizes C# logic exercises into 10 steps, each containing a serie
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="25" width="37" alt="vscode logo"/>
 </div>
 
-## Contents 📋
-
-- [About the Project](#about-the-project)
-- [Technologies Used](#technologies-used)
-- [How to Run](#how-to-run)
-- [Exercise List](#exercise-list)
-- [Contributing](#contributing)
-
 ## How to Run 🏃‍♀️
 
+```bash
 git clone https://github.com/dinadevs/LogicExercisesList.git
 cd LogicExercisesList
 dotnet run
+```
 
-## Exercise List 📚
+## Exercises List 📚
 
 | Step | Description                                | N° of Exercises |
 |------|--------------------------------------------|-----------------|
