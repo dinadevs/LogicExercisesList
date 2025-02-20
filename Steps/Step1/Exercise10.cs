@@ -19,7 +19,6 @@ namespace Step1
             Console.WriteLine($"Area to be painted: {area} m²");
             //amount of paint needed
             Console.WriteLine($"Quantity of paint required {area / 2} liters");
-                     
         }
     }
 }

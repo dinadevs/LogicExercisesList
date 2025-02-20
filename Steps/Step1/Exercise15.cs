@@ -7,10 +7,10 @@ namespace Step1
         public static void Run()
         {
             // variable declaration 
-            double days;
+            int days;
             //days
             Console.WriteLine("Days worked in a month:");
-            days = double.Parse(Console.ReadLine());
+            days = Convert.ToInt32(Console.ReadLine());
             
             //calculate 8 hours a day and earn R$25 per hour
             Console.WriteLine($"You worked {days} days.\nYour salary this month is: {days * 8 * 25:C}.");

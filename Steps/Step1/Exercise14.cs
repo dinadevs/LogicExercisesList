@@ -7,10 +7,11 @@ namespace Step1
         public static void Run()
         {
             // variable declaration
-            double km, days;
+            double km; 
+            int days;
             // days
             Console.WriteLine("Number of days:");
-            days = double.Parse(Console.ReadLine());
+            days = Convert.ToInt32(Console.ReadLine());
             //km traveled 
             Console.WriteLine("Number of km traveled:");
             km = double.Parse(Console.ReadLine());
