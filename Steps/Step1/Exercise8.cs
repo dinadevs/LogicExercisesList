@@ -12,8 +12,8 @@ namespace Step1
             //show distance in meters
             Console.WriteLine($"The distance from {num}m corresponds to: ");
             //show values ​​in other measurements
-            Console.WriteLine($"{num / 1000} Km\n {num / 100} Hm\n {num / 10} Dam\n");
-            Console.WriteLine($"{num * 10} dm\n {num * 100} cm\n {num * 1000} mm");            
+            Console.WriteLine($"\n {num / 1000} Km\n {num / 100} Hm\n {num / 10} Dam");
+            Console.WriteLine($"\n {num * 10} dm\n {num * 100} cm\n {num * 1000} mm");            
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Step1
             //show predecessor
             Console.WriteLine($"The predecessor of {num} is {num - 1}");
             //show the successor
-            Console.WriteLine($"The successor of{num} is {num + 1}");
+            Console.WriteLine($"The successor of {num} is {num + 1}");
             
         }
     }
