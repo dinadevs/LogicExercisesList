@@ -19,7 +19,7 @@ namespace Step2
             //calculating notes
             double average = (note1 + note2) / 2;
             //First condition
-            if (average > 7.0)
+            if (average >= 7.0)
             {
                 Console.WriteLine("Approved student!");
             }

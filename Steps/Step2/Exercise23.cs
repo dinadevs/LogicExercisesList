@@ -7,7 +7,7 @@ namespace Step2
         public static void Run()
         {
             // variables declaration
-            double wonDisc = 13, menDisc = 5;
+            const double WOM_DISC = 13, MEN_DISC = 5;
 
             Console.WriteLine("Enter your name:");
             string name = Console.ReadLine();
@@ -18,13 +18,13 @@ namespace Step2
             if (sex == 'F' || sex == 'M')
             {   //account value
                 Console.WriteLine("Enter your account amount:");
-                double proctValue = double.Parse(Console.ReadLine());
+                double productValue = double.Parse(Console.ReadLine());
                 //check the discount
-                double discountRate = (sex == 'F') ? wonDisc : menDisc;
+                double discountRate = (sex == 'F') ? WOM_DISC : MEN_DISC;
                 //discounted final price
-                double finalValue = proctValue * (1 - discountRate / 100);
+                double finalValue = productValue * (1 - discountRate / 100);
                 
-                Console.WriteLine($"Congratulations, you got a {(sex == 'M' ? "5%" : "13%")} discount!");
+                Console.WriteLine($"Congratulations {name}, you got a {(sex == 'M' ? "5%" : "13%")} discount!");
                 Console.WriteLine($"Amount to be paid: {finalValue:C}");
             }
             else

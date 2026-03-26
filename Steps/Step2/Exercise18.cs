@@ -6,7 +6,7 @@ namespace Step2
         {
             // variables declaration
             int birthYear;
-            int currentYear = 2025;
+            int currentYear = 2026;
             //read variable
             Console.WriteLine("What is the year of birth?");
             birthYear = Convert.ToInt32(Console.ReadLine());
