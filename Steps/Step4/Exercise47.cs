@@ -8,8 +8,8 @@ namespace Step4
         {
             int sum = 0;
             Console.WriteLine("\nCalculating the sum of 500 + 450 + 400 + ... + 50 + 0: ");
-
-            for (int i = 500; i >= 0; i += 50)
+            //countdown
+            for (int i = 500; i >= 0; i -= 50)
             {
                 sum += i; // Accumulate the sum
             }

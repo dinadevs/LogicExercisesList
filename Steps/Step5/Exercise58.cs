@@ -7,22 +7,23 @@ namespace Step5
     {
         public static void Run()
         {
-            int age = 0;
             int totalStudents = 0;
-            double middleAge = 0;
+            int totalAge = 0;
 
             while (true)
             {
-                Console.WriteLine("✅Enter the student's age or \n❌ '999' to exit the program");
-                age = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter the student's age or \n'999' to exit the program");
+                int age = int.Parse(Console.ReadLine());
 
-                if (age != 999)
+                if (age != 999) // Infinite loop (exits only with break)
                 {
-                    age += age;
-                    totalStudents++;
+                    break;
                 }
 
-                middleAge = totalStudents / age;
+                totalAge += age;
+                totalStudents++;
+
+                double middleAge = (double)totalAge / totalStudents;
 
                 Console.WriteLine($"Average age of the group: {middleAge}");
                 Console.WriteLine($"Total students: {totalStudents}");

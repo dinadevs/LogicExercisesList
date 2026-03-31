@@ -8,8 +8,8 @@ namespace Step3
         {
             //Improve the game that of exercise 32
 
-            Random random = new Random();
-            List<int> drawnNumbers = new List<int>();
+            Random random = new Random();// generates random numbers
+            List<int> drawnNumbers = new List<int>();//store the drawn numbers
             int hits = 0;
 
             Console.WriteLine("=== Try to find out what it was! ===");
@@ -26,11 +26,11 @@ namespace Step3
                 return;
             }
 
-            for (int i = 1; i < 4; i++)
+            for (int i = 1; i < 4; i++)//Loop of 3
             {
-                int computerChoice = random.Next(1, 11);
+                int computerChoice = random.Next(1, 11);//Generates a random number between 1 and 10
                 drawnNumbers.Add(computerChoice);
-
+                //Stores the drawn number in the list
                 Console.WriteLine($"\nRound {i}: \nDrawing number...");
                 Thread.Sleep(1000);
 

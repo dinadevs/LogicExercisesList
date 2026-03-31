@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 namespace Step6
 {
     public static class Exercise62
@@ -18,9 +16,8 @@ namespace Step6
 
                 int age = Convert.ToInt32(Console.ReadLine());
 
-                totalAges++;
-
-                sumAges += age;
+                totalAges++;//increases the total number of people
+                sumAges += age;//add the age to the total.
 
                 Console.Write("Do you want to continue? [Y/N] ");
                 response = Console.ReadLine()[0];
@@ -29,7 +26,7 @@ namespace Step6
                 {
                     agesOver21++;
                 }
-
+            //Continues as long as you answer Y or y
             } while (response == 'y' || response == 'Y');
 
             double average = (double)sumAges / totalAges;

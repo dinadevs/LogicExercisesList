@@ -18,15 +18,15 @@ namespace Step4
             Console.WriteLine("== Registration for up to 7 people ==");
 
             for (int i = 0; i < 7; i++)
-            {
+            {   //Weight/height input
                 Console.WriteLine($"Enter the weight of person {i + 1} (kg):");
                 weight[i] = double.Parse(Console.ReadLine());
 
                 Console.WriteLine($"Enter the height of person {i + 1} (m):"); 
                 height[i] = double.Parse(Console.ReadLine());
-
+                //Sum of heights to average after
                 totalHeight += height[i];
-
+                // Check if it weighs more than 90kg
                 if (weight[i] > 90)
                 {
                     weighMoreThan90++;
@@ -43,7 +43,7 @@ namespace Step4
                 }
             }
 
-            double averageHeight = totalHeight / 7;
+            double averageHeight = totalHeight / 7; // Calculates the average height
 
             Console.WriteLine("\n==== Results ====");
             Console.WriteLine($"Group height average: {averageHeight:F2} m"); 

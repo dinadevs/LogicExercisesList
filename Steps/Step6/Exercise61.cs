@@ -12,9 +12,9 @@ namespace Step6
 
             do
             {
-                Console.Write(num + " ");
-                num = num + INTERVALO_NUMBER;
-            } while (num <= STOP_NUMBER);
+                Console.Write(num + " ");//current value
+                num = num + INTERVALO_NUMBER;//add 3 for each repetition
+            } while (num <= STOP_NUMBER);//continues as long as num is less than or equal to 30
             
             Console.WriteLine("He finished!");
         }

@@ -8,10 +8,10 @@ namespace Step4
         {
             int sum = 0;
             Console.WriteLine("\nCalculating the sum of 6 + 8 + 10 + ... + 100:");
-
+            //It starts at 6, goes up to 100, adding 2s each time
             for (int i = 6; i <= 100; i += 2)
             {
-                sum += i;
+                sum += i; //Each repetition adds the value of i to the variable sum
 
             }
             Console.WriteLine($"The total sum is: {sum}");

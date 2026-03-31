@@ -10,18 +10,20 @@ namespace Step4
             int finalValue;
             int increment;
 
+            //initial/final value and reads the values
             Console.WriteLine("\nEnter the initial count value: ");
             initialValue = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("The final value: ");
             finalValue = Convert.ToInt32(Console.ReadLine());
-
+            //increment value
             Console.WriteLine("The increment: ");
             increment = Convert.ToInt32(Console.ReadLine());
 
-            //Count up
+            //condition
             if (initialValue < finalValue)
-            {
+            {   
+                //It starts at initialValue, goes to finalValue, and adds the increment. 
                 for (int i = initialValue; i <= finalValue; i += increment)
                 {
                     Console.Write(i + " ");

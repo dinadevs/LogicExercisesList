@@ -19,14 +19,14 @@ namespace Step6
                 Console.Write("Enter the number: ");
                 int number = Convert.ToInt32(Console.ReadLine());
 
-                totalNumbers++;
-                sumNumbers += number;
+                totalNumbers++;// Increases quantity
+                sumNumbers += number;//add the number
 
-                if (totalNumbers == 0 || number < smallestNumber)
+                if (totalNumbers == 1 || number < smallestNumber)
                 {
                     smallestNumber = number;
                 }
-                
+                //checks if it's even
                 if (number % 2 == 0)
                 {
                     evenNumbers++;
@@ -34,10 +34,10 @@ namespace Step6
 
                 Console.WriteLine("Do you want to continue? [Y/N]");
                 response = Console.ReadLine()[0];
-
+            // Continues as long as you answer Y or y
             } while (response == 'y' || response == 'Y');
 
-            double average = (double)sumNumbers / totalNumbers;
+            double average = totalNumbers > 0 ? (double)sumNumbers / totalNumbers : 0;
 
             Console.WriteLine($"Sum of the values: {sumNumbers}");
             Console.WriteLine($"Smallest value entered: {smallestNumber}");
