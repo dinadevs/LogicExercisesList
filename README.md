@@ -34,7 +34,7 @@ dotnet run
 |------|--------------------------------------------|-----------------|
 |  1   | Basic operations and variables.            |     1 to 16     |
 |  2   | Basic Conditionals.                        |    17 to 25     |
-|  3   | Condições compost.                         |    26 to 37     |
+|  3   | Conditions compost.                        |    26 to 37     |
 |  4   | While Loops.                               |    38 to 55     |
 |  5   | While with Flag.                           |    56 to 60     |
 |  6   | Repetition with Do-While.                  |    61 to 63     |
