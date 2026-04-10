@@ -8,6 +8,7 @@ namespace Step8
 
             int[] num = new int[10];
 
+            // Fill array with 5 for even positions and 3 for odd positions
             for (int i = 0; i < num.Length; i++)
             {
                 if (i % 2 == 0)
@@ -19,6 +20,7 @@ namespace Step8
                     num[i] = 3;
                 }
             }
+         
             for (int i = 0; i < num.Length; i++)
             {
                 Console.Write($"{num[i]} ");

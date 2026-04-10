@@ -12,8 +12,9 @@ namespace Step8
 
             for (int i = 0; i < num.Length; i++)
             {
-                num[i] = 999;
+                num[i] = 999; //assigns the value 999 to the array
             }
+
             for (int i = 0; i < num.Length; i++)
             {
                 Console.Write($"{num[i]} ");

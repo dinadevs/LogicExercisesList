@@ -8,10 +8,11 @@ namespace Step8
         {
             Console.WriteLine("=== Step 8 | Exercise 79 ===");
 
+            
             int[] num = new int[10];
 
             for (int i = 0; i < num.Length; i++)
-            {
+            {   // Read integers with validation
                 int value;
                 bool valid;
 
@@ -32,6 +33,7 @@ namespace Step8
                 num[i] = value;
             }
 
+            //even numbers
             Console.WriteLine("\nEven numbers:");
 
             for (int i = 0; i < num.Length; i++)

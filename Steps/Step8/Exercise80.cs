@@ -6,18 +6,20 @@ namespace Step8
         {
             Console.WriteLine("=== Step 8 | Exercise 80 ===");
 
+            
             int[] number = new int[30];
             Random random = new Random();
 
             for (int i = 0; i < number.Length; i++)
             {
-                number[i] = random.Next(1, 16);
+                number[i] = random.Next(1, 16); // Generate random numbers
                 Console.WriteLine(number[i]);
             }
 
             Console.WriteLine("Enter a number from 1 to 15.: ");
             int entryNumber = Convert.ToInt32(Console.ReadLine());
 
+            // Search and count occurrences
             int count = 0;
             for (int i = 0; i < number.Length; i++)
             {

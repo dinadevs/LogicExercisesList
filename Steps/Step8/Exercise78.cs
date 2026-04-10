@@ -6,20 +6,23 @@ namespace Step8
         {
             Console.WriteLine("=== Step 8 | Exercise 78 ===");
 
+            
             int[] num = new int[15];
 
             for (int i = 0; i < num.Length; i++)
             {
                 Console.WriteLine("Enter a number: ");
-                num[i] = Convert.ToInt32(Console.ReadLine());
+                num[i] = Convert.ToInt32(Console.ReadLine());// Read numbers 
             }
 
+            // Display values
             Console.WriteLine("Integer vector: ");
             for (int i = 0; i < num.Length; i++)
             {
                 Console.WriteLine($"{num[i]} ");
             }
 
+            // Filter and display multiples of 10
             Console.WriteLine("Values ​​that are multiples of 10.: ");
             for (int i = 0; i < num.Length; i++)
             {

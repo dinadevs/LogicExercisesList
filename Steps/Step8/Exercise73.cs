@@ -8,6 +8,7 @@ namespace Step8
 
             int[] num = new int[10];
 
+            // Display array in reverse order
             for(int i = num.Length - 1; i >= 0; i--) {
               Console.Write($"{i} ");
             }
